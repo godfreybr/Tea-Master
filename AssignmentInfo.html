@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>ICT211 Major Assignment Two</title>
+</head>
+
+<body >
+<div class="LabSheet"> 
+	
+	<!-- to enable SSI, remove the space between two dashes and # --> 
+	<h2 id="start">ICT211 Major  Assignment Two</h2>
+	<hr />
+	<ul>
+		<li> <a href="#intro">Introduction</a> </li>
+		<li> <a href="#deadline"> Deadline and Penalty for Late Submission </a> </li>
+		<li> <a href="#background"> Background</a> </li>
+		<li> <a href="#basic"> Basic Features</a> </li>
+		<li> <a href="#advanced"> Advanced features</a> </li>
+		<li> <a href="#docs">Documentation and Submission Requirements</a> </li>
+		<li> <a href="#marking">Marking Guide</a> </li>
+		<li> <a href="#policy">Policy on the Reuse of Third Party Source Code</a></li>
+		<li> <a href="#grievance">Grievance with Assignment Marking </a></li>
+		<li> <a href="#errata">Errata</a></li>
+	</ul>
+	<hr />
+	<h3 id="intro"> Introduction
+		(<span class="Back"><a href="#start">Back to Beginning</a></span>) </h3>
+	<p> This assignment consists of one task: to design and implement the website for
+		a fictitious company to conduct online trading. This assignment is worth 
+		20% of the total unit assessment. 
+		The assignment covers materials from Topic 1 to Topic 10. </p>
+	<p> Please note that one of objectives of this unit is to develop skills 
+		in self-learning and research.  This assignment deliberately includes 
+		features that requires independent research on your part in order to 
+		come up with an solution. </p>
+	<p> The assignment will be marked out of 100. 
+		To achieve good mark you must strictly adhere to the <a href="#docs">Documentation and Submission Requirements</a>. </p>
+	<p>The following sections provide the details of the assignment including
+		its various requirements. If there are still things unclear to you
+		after reading these sections, you should contact the Unit Coordinator
+		for clarifications. </p>
+	<h3 id="deadline"> Deadline and Penalty for Late Submission 
+		(<span class="Back"><a href="#start">Back to Beginning</a></span>) </h3>
+	<p> This submission deadline of this assignment is specified 
+		in the Teaching Schedule page of the Unit LMS.  If there is any change
+		in the submission deadline, it will be announced in the Announcements page
+		of the Unit LMS. </p>
+	<p> Assignments submitted on or before the deadline will be marked out of 100%. </p>
+	<p> Late submission of the assignment will have 10% of the student's raw 
+		marks deducted per day, unless an application for extension of submission
+		deadline is granted. Submission that is late by more than 10 days 
+		will not be accepted (in fact the Unit LMS will stop accepting assignments
+		10  days after the published deadline). </p>
+	<p> Applications for extension of your assignment deadline can only be made
+		via email to the Unit Coordinator, normally prior to
+		the specified due date of the assignment.  If an extension is granted
+		(also by email), you must attach a copy of the email to your submission
+		(see <a href="#docs">Documentation and Submission Requirements</a>). Applications for extension by phone
+		or in person do not count even if granted.  The above policy will be
+		rigorously enforced. </p>
+	<h3 id="background"> Background (<span class="Back"><a href="#start">Back to Beginning</a></span>) </h3>
+	<p> Your task is to design and implement the company website for a fictitious company 
+		so that it can conduct its trade over the Internet. </p>
+	<p> The fictitious company for which your website will be designed must
+		meet all requirements specified in Task 1 in Major Assignment 1. As
+		you have already described a fictitious company as part of 
+		Major Assignment 1, you should  use that description as the starting
+		point. You may need to improve the description of the company if
+		your original description does not meet all requirements. </p>
+	<p> You are required to use the following technologies to implement the
+		website: HTML5, CSS, JavaScript, PHP and MySQL. You may also use Ajax
+		technology to implement searching, user authentication and database 
+		update.
+		You must not use any web content management framework/system  to create 
+		this website unless you have obtained an written approval from the Unit 
+		Coordinator. </p>
+	<h3 id="basic"> Basic Features 
+		(<span class="Back"><a href="#start">Back to Beginning</a></span>) </h3>
+	<p> Your website should provide <em>the basic information </em> and <em>a search facility</em>. </p>
+	<p> <span class="Emphasize">Basic Information:</span> Your website should provide all required company information and meet
+		the following requirements. </p>
+	<ol>
+		<li> It contains the basic information about the company, for details see 
+			points 1, 2, and 3 under Task 1 in Major Assignment 1. </li>
+		<li> It has a consistent navigation system for users to move through your 
+			website. </li>
+		<li> It provides an online Help for users - instructions on how to use 
+			your website. </li>
+		<li> It comes with a site-map showing the structure of your website. </li>
+		<li> It must use some of the new features available in HTML5, such as
+			video and audio, to enhance the image of the company. </li>
+		<li> While you should aim at making your website accessible to as many 
+			browsers as possible, the fact is the support for HTML5 in some older 
+			browsers is limited. For the purpose of assessment, your website 
+			only need to be tested with Google Crome, Microsoft Internet Explorer 
+			and Mozilla Firefox that were released since last year (I have lost 
+			count of the version numbers. At the moment, there seems to be a 
+			fierce competition among the various browser vendors on who can 
+			come up with the highest version number :-)).  Your 
+			website should also be served through the Apache web server with 
+			PHP enabled - this is the set-up on the server where your 
+			scripts will be assessed. </li>
+	</ol>
+	<p> <span  class="Emphasize">Search Facility:</span> In addition, your website must  have a search facility to allow users to 
+		search for details of your products/services.  The search facility must meet 
+		the following requirements: </p>
+	<ol>
+		<li>The raw product/service data must be stored in the MySQL database
+			on the server. They must not be hard coded in the HTML pages.
+			The data should be retrieved dynamically from the database and sent
+			to the web browser in response to user enquiries. If new data 
+			are added to the database, your website should not have to be 
+			changed. </li>
+		<li>The search facility is offered to users as HTML forms. 
+			The required data on every form should be clearly identified to 
+			the user, and these required fields should be checked to 
+			ensure they are neither  empty nor invalid, before the data collected 
+			from the form are sent to the server-side script. </li>
+		<li>If a required field is found to be empty or containing invalid 
+			data, the user should be forced to re-enter the data. </li>
+		<li>Allow at least two levels of searching. The first form of search
+			is by keywords, where an entry is retrieved from the database if the 
+			user's search term matches any text in any fields in the entry. </li>
+		<li>The second form of search is by browsing, where the user can go through 
+			different categories of products/services to find what he or she wants.</li>
+		<li>Your website should show the user his or her last search entry. </li>
+	</ol>
+	<h3 id="advanced"> Advanced Features
+		(<span class="Back"><a href="#start">Back to Beginning</a></span>) </h3>
+	<p> This part provides different functionalities to three different types 
+		of users of the website: unregistered users, existing customers, 
+		and support staff. </p>
+	<ul>
+		<li><strong><em>Unregistered Users</em></strong>: anyone without 
+			authentication is given access to all basic functionalities specified 
+			above, including search products/services by keywords and by browsing. </li>
+		<li><strong><em>Existing Customers</em></strong>: an existing customer 
+			has an account on the website. He/she needs to be authenticated before
+			access is granted. Once access is granted, he/she can modify his or her
+			personal details such as name, address, phone number and email address.
+			He/she can also submit an order for the company's products or services.
+			After it is validated by the client-side script, this order is sent to 
+			the server-side script for processing.  The website will
+			then display the confirmation of the order or rejection of the order
+			(perhaps because not enough stock are available). If the order is 
+			confirmed, the database should be updated. Please note that anyone can
+			register an account from the company's website to become a customer
+			of the company without the involvement of the company support staff. 
+			It goes without saying that these customer account details must be kept 
+			in the database. </li>
+		<li><strong><em>Support Staff</em></strong>: a support staff member has 
+			an account on the website. He/she needs to be authenticated before
+			access is granted. Once access is granted, he/she can access any customer 
+			account without using that customer's password. 
+			He/she can also  modify product/service details in the database, 
+			such as adding  a new product to the database, removing
+			the details of a product from the database,  and changing the stock 
+			information of a product. Please note that a support staff member with
+			a support staff account can create new support staff accounts. </li>
+	</ul>
+	<p> Note that any existing customer and support staff member should still 
+		be able to access the basic information and use the search facility
+		just like any unregistered user, whether they are authenticated or not. </p>
+	<p> To help your tutor mark your assignment, you are required to 
+		create at least <strong><em>three</em></strong> existing customer accounts 
+		and <strong><em>two</em></strong> support staff accounts on the website. 
+		You should give the user names and passwords of these test accounts in 
+		your assignment documentation. </p>
+	<h3 id="docs"> Documentation and Submission Requirements 
+		(<span class="Back"><a href="#start">Back to Beginning</a></span>) </h3>
+	<p> Your assignment must be submitted in the form of a single 
+		tar (or ZIP) archive file via the Unit LMS. The archive file must be
+		named in the following format (assuming it is a tar file): </p>
+	<pre>
+A2_&lt;your family name&gt;_&lt;your first name&gt;.tar
+</pre>
+	<p> For example, the student, John Smith, would name his tar file as <code>A2_Smith_John.tar</code>. </p>
+	<p> Your tar archive must contain the following files/directories: </p>
+	<ul>
+		<li>
+			<p> One Microsoft Word document named "Assignment2.doc". This 
+				file replaces the traditional hard-copy submission. 
+				See the detailed requirements of this file later
+				in this section. </p>
+		</li>
+		<li>
+			<p> A copy of your full website (a directory containing the files
+				and subdirectories of your website).
+				Note that you should use relative paths to refer to files in
+				your website so that your website is portable (if you use
+				absolute paths in your website, your website will only work
+				on the system in which your website is developed.) </p>
+		</li>
+	</ul>
+	<p>In addition to submitting website files to the Unit LMS, you must
+		host your website on ceto using the default server (i.e., the 
+		Apache server on port 80, not on your own Apache server). </p>
+	<h4> The file "Assignment2.doc" </h4>
+	<p> This Word file should contain the documents in the following order: </p>
+	<ol>
+		<li>
+			<p><a href="./ICT211MajorAssignmentTwoCheckList.doc"> ICT211 Assignment Two Check List</a>: 
+				all students (internal and external) must 
+				complete this check list and include it in your Word file. </p>
+		</li>
+		<li>
+			<p> Extension Granted: if you have been granted extension, 
+				include the email from your Unit Coordinator after the 
+				declaration form. </p>
+		</li>
+		<li>
+			<p> <span class="Emphasize">The task description </span>: 
+				you can cut-and-paste the description from this web 
+				page to your Word file. </p>
+		</li>
+		<li>
+			<p><span class="Emphasize">Discussion of your solution</span>: 
+				In particular, you should emphasise any aspect of your 
+				solution that is novel or unusual. You should also 
+				discuss technical choices available to you,  the consideration
+				behind your technical choice, and whether the result of your 
+				solution meets your expectation.  You should highlight the 
+				strength and weakness of your solution and point out 
+				what improvement can be made to the design of  your website. </p>
+		</li>
+		<li>
+			<p><span class="Emphasize">Self diagnosis</span>: 
+				referring to <em>Basic Features</em> and <em> Advanced 
+				Features</em> specified above, give a statement with the 
+				following details:  
+				what features are fully working,  what features are fully 
+				implemented but not fully working, and what features are 
+				not fully implemented.
+				This statement is essential. You will incur harsh
+				penalty if you fail to provide this statement or if you 
+				deliberately provide a vague or  misleading statement. </p>
+		</li>
+		<li>
+			<p><span class="Emphasize">The URL of your live website 
+				and details of five test accounts</span>:  in addition to 
+				the website files included in 
+				the tar archive, you must host your website on the default
+				Apache HTTP server on ceto (i.e., the server listening 
+				on port 80, not your own Apache server). 
+				Furthermore, for testing purpose, you must provide the username 
+				and password of three existing customer accounts and two 
+				existing support staff accounts. </p>
+		</li>
+		<li>
+			<p><span class="Emphasize">Architecture design 
+				description</span>: describe the structure of your program 
+				for future programmers (including yourself) who may want 
+				to change and extend your source code, link with your 
+				program, and/or use some components of your program.  
+				In addition to the description, you should provide an 
+				explanation of each web page file. </p>
+		</li>
+		<li>
+			<p><span class="Emphasize">Test documentation</span>:
+				your website must be thoroughly tested. You must provide evidence
+				that <em>each required feature</em> is fully tested. You are 
+				required to document the test cases for each required feature 
+				to demonstrate that your
+				website works as well as you have claimed. Each test 
+				case should include the purpose of the 
+				test, the outcome of the test and the evidence of the 
+				test. The evidence may be in the form of one or several 
+				screenshots. Marks will be awarded substantially based 
+				on these documented test cases. <strong>Do not expect to receive an above 
+				average mark unless your test documentation is complete
+				and convincing</strong>. </p>
+		</li>
+	</ol>
+	<p class="Emphasize"> The documentation and submission requirements described above will be strictly 
+		enforced.  Your assignment will not be marked, or your mark will be significantly
+		reduced, if you fail to adhere to the above requirements. </p>
+	<h3 id="marking"> Marking Guide 
+		(<span class="Back"><a href="#start">Back to Beginning</a></span>) </h3>
+	<p> Your assignment will be assessed based on the aesthetic quality, the 
+		functionality, and the robustness of your website as well as the quality 
+		of your documentation.  The breakdown of marks are: </p>
+	<ul>
+		<li> Presentation quality of your documentation: 10% </li>
+		<li> Basic features: 60%
+			<ul>
+				<li>The basic information: 30% </li>
+				<li>Search by keywords: 15% </li>
+				<li>Search by browsing: 15% </li>
+			</ul>
+		</li>
+		<li> Advanced features: 30%
+			<ul>
+				<li>functionalities related to existing customers: 15% </li>
+				<li>functionalities related to support staff: 15% </li>
+			</ul>
+		</li>
+	</ul>
+	<h3 id="policy"> Policy on the Reuse of the Third Party Source Code
+		(<span class="Back"><a href="#start">Back to Beginning</a></span>) </h3>
+	<p> Please read this section very carefully. </p>
+	<p>All students are encouraged to solve the problems independently with
+		their own source code. I understand, however, that occasionally there
+		may be justifiable reasons to re-use source codes from a third party.
+		Please note that if you have used one or more pieces of third party source
+		codes in your program (this includes the situations where you have made
+		minor modifications to the third party source code), your assignment
+		will be acceptable only if you have satisfied all of the following
+		conditions: </p>
+	<ul>
+		<li> The third party source code is fully identified, including the page
+			numbers and line numbers in your hard-copy assignment documentation; </li>
+		<li> The origin of the third party code is fully disclosed and acknowledged
+			in your assignment submission; </li>
+		<li> The third party source code is fully commented in your program listing.
+			All variables, functions and major control structures must be commented to
+			show clearly that you understand the logic of the code; </li>
+		<li>The third party source code is less than 20% of your program
+			(in terms of the number of lines), excluding the code specifically allowed
+			to be used.</li>
+	</ul>
+	<p>Failure to satisfy any one of the above conditions will result in
+		0 mark being awarded to your entire assignment. </p>
+	<p>The above policy will be rigorously enforced by the Unit Coordinator
+		and Tutors. </p>
+	<h3 id="grievance"> Grievance with Assignment Marking
+		(<span class="Back"><a href="#start">Back to Beginning</a></span>) </h3>
+	<p> Once your assignment is marked and the result is uploaded to the
+		Unit LMS, if you 
+		have any grievance with the marking, you must raise it with your 
+		Unit Coordinator by email, within 7 days (from the date the marks
+		are uploaded to the Unit LMS), or within the announced deadline in 
+		the Unit LMS, whichever is earlier. 
+		Otherwise the marks awarded to you will be final and will be used to calculate 
+		your final weighted average score for the unit. </p>
+	<h3 id="errata">Errata
+		(<span class="Back"><a href="#start">Back to Beginning</a></span>) </h3>
+	<p> This page is subject to change based on errors found. Any errors found
+		and corrected will be posted in the Announcements page of 
+		the Unit LMS.  If you print out a copy of this page, please follow the 
+		news in the Announcements page of the Unit LMS for any updates. </p>
+	<div class="Signature"> Dr Hong Xie <br />
+		Unit Coordinator for ICT211 <br />
+		Last Revision: Thursday, 4 September 2014 </div>
+</div>
+<hr />
+<div class="Footer"> Document author: <a href="mailto:h.xie@murdoch.edu.au">Dr. H. Xie</a>, 
+	Unit Coordinator, ICT211 Web Computing <br />
+	Last Modified: Thursday, 04-Sep-2014 10:40:47 AWST <br />
+	<a href="http://www.murdoch.edu.au/copy/copy.html">Disclaimer &amp; Copyright Notice</a> &#169; 2014 <a href="http://www.murdoch.edu.au">Murdoch University</a> <br />
+	This document is relevant for 2014 only </div>
+</body>
+</html>

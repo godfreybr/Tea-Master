@@ -1,0 +1,245 @@
+ .transparentBackgroundColorMixin(@alpha, @color) {
+ background-color: rgba(red(@color), green(@color), blue(@color), @alpha);
+}
+.myClass {
+ .transparentBackgroundColorMixin(0.6, #FFFFFF);
+}
+
+/* ---------->>> COLOUR SCHEME <<<-----------*/
+
+.color-primary-0 {
+	color: #0870FF
+}	/* Main Primary color */
+.color-primary-1 {
+	color: #4C96FC
+}
+.color-primary-2 {
+	color: #1D7CFF
+}
+.color-primary-3 {
+	color: #0058D1
+}
+.color-primary-4 {
+	color: #004199
+}
+/* PAGE FULL SIZE HACK */
+html {
+	/* Little hack to keep scrollbar on */
+	/* Just for small design decision */
+	overflow: scroll;
+}
+html, body {
+	height: 99%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	/* PAGE BACKGROUND */
+	background: url(../images/Blue-Sky-Anime-Wallpaper.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+/* GENERIC STYLES */
+
+/* ---------->>> MAIN CONTAINER <<<-----------*/
+#main_container {
+	/* Dimensions */
+	width: 800px;
+	/* Margins */
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	/* Opacity */
+	/*opacity: 0.8;*/
+}
+
+/* ---------->>> INFORMATION BAR <<<-----------*/
+#head_infobar {
+	/* Set bar position */
+	position: fixed;
+	top: 0px;
+	
+	/* Dimensions */
+	width: 100%;
+	
+	/* Style */
+	background-color: #4C96FC;
+	border-bottom: 5px #004199 solid;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* ---------->>> BANNER CONTAINER <<<-----------*/
+#banner_container {
+	/* Banner BG */
+	background-image:url(../images/banner-top.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size:contain;
+
+	/* Dimensions */
+	height: 300px;
+
+	display: block;
+
+	/* Positioning */
+	margin-bottom: -30px;
+	
+	/* Layer */
+	z-index: -10;
+}
+#banner_container img {
+	/* Vertial Align */
+	margin-top: 100px;
+}
+/* ---------->>> NAV CONTAINER <<<-----------*/
+#nav_container {
+	/* Margins */
+	margin-left: 35px;
+	margin-bottom: -10px;
+	
+}
+
+#nav_container a {
+	/* Background */
+	background-color: #4C96FC;
+	/* Borders */
+	border: 2px #004199 solid;
+	border-radius: 10px;
+	/* Text */
+	color: #004199;
+	text-decoration: none;
+	/* Padding */
+	padding: 10px;
+	/* Margins */
+	margin-right: 10px;
+	/* Index */
+	z-index: 10;
+}
+
+#nav_container a:hover {
+	
+}
+
+/* ---------->>> CONTENT CONTAINER <<<-----------*/
+#content_container {
+	/* Background */
+	background-color: #0058D1;
+	/* Borders */
+	border-radius: 10px;
+	border: 5px #004199 solid;
+	/* Shadows */
+	box-shadow: 10px 10px 30px #004199;
+	/* Padding */
+	padding: 20px;
+}
+#content_container p, ul, h1, h2, h3, h4 {
+	/* Background */
+	background-color: #4C96FC;
+	/* Border */
+	border-radius: 10px;
+	/* Text */
+	color: #004199;
+	/* Margins */
+	margin: 10px;
+	/* Padding */
+	padding: 10px;
+}
+
+.content_container_div {
+	/* Background */
+	background-color: #4C96FC;
+	/* Border */
+	border-radius: 10px;
+	/* Text */
+	color: #004199;
+	/* Margins */
+	margin: 10px;
+	/* Padding */
+	padding: 10px;
+}
+
+#content_container li {
+	margin-left: 30px;
+}
+
+#footer_container {
+	height: 100px;
+}
+
+/* ---------->>> SHOP ITEMS <<<-----------*/
+.shop_category {
+	/* Width */
+
+	/* Background */
+	background-color: #4C96FC;
+	/* Border */
+	border-radius: 10px;
+	/* Text */
+	color: #004199;
+	/* Margins */
+	margin: 10px;
+	/* Padding */
+	padding: 10px;
+	/* Alignment */
+	text-align: center;
+	/* Inline */
+	display: inline-block;
+
+	/* Text properties */
+	font-size: 18px;
+}
+
+.shop_spacer {
+	width: 100%
+}
+
+.shop_container {
+	text-align: center;
+}
+.shop_item {
+	/* Dimensions */
+	width: 144px;
+	/* Background */
+	background-color: #4C96FC;
+	/* Border */
+	border-radius: 10px;
+	/* Text */
+	color: #004199;
+	/* Margins */
+	margin: 10px;
+	/* Padding */
+	padding: 10px;
+	/* Alignment */
+	text-align: center;
+	/* Inline */
+	display: inline-block;
+
+}
+.shop_item_title {
+	font-size: 18px;
+	font-weight: bold;
+}
+.shop_item_price {
+
+}
+
+/* SHOP ITEMS DESC */
+[tooltip]:before {
+    content: attr(tooltip);
+    position: absolute;
+    opacity: 0;
+    transition: all 0.15s ease;
+    padding: 10px;
+    color: #004199;
+    border-radius: 10px;
+    border: 2px solid #004199;
+}
+
+[tooltip]:hover:before {
+    opacity: 1;
+    background: #4C96FC;
+    margin-top: -55px;
+    margin-left: -55px;    
+}
