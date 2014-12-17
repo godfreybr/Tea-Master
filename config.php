@@ -16,13 +16,13 @@ if(constant('TEA_MAIN_INCLUDED')!=1) { die("No direct access"); }
 // Define the database type (MySQLi, MSSQL)
 define("TEA_DB_TYPE",			"mysql");
 // Define database server (default: localhost)
-define("TEA_DB_SERVER",			"mysql.lcars-systems.com");
+define("TEA_DB_SERVER",			"localhost");
 // Define database server username
 define("TEA_DB_USERNAME",		"teamaster");
 // Define database server password
 define("TEA_DB_PASSWORD",		"teamaster");
 // Define database server database
-define("TEA_DB_DATABASE",		"lcars_teamaster");
+define("TEA_DB_DATABASE",		"teamaster");
 // Define database table prefix
 define("TEA_DB_PREFIX",			"tea_");
 
