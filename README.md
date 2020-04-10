@@ -31,3 +31,4 @@ An installer was planned but never implemented, setup must be done manually.
 	2. Import schema.sql to a 'MySQL' server
 	3. Edit database credentials in ./config.php
 	4. (Optional) If using PHP 5.4 or below, set TEA_ENCRYPTION_METHOD to 0
+	5. Login with admin@example.com & Password1
