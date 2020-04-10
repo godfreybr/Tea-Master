@@ -15,6 +15,8 @@ This store IS buggy and is only meant for display purposes.
 
 The store database backend is coded using PDOs and as such can support numerous database engines, however support for anything but MySQL is untested.
 
+Update: PHP 7.3 throws some warnings but everything still appears to be fully functional despite the major differences between PHP 5.5 & PHP 7.x.
+
 Requirements
 ==========
 
